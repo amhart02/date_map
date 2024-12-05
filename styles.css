@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&family=Montserrat:ital,wght@0,100..900;1,100..900');
+
+body {
+    font-family: "Montserrat", serif;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+/* header */
+h1 {
+    text-align: center;
+    font-family: "Hachi Maru Pop", cursive;
+    font-size: 50px;
+    color: rgb(148, 25, 91);
+}
+
+h2 {
+    font-size: 20px;
+    text-align: center;
+    font-weight: 400;
+}
+
+gmp-map {
+    justify-self: center;
+    max-width: 1000px;
+    height: 500px;
+    margin: 50px;
+}
+
+/* map legend */
+.map-legend {
+    font-size: 14px;
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+
+.map-legend h4 {
+    margin: 0 0 10px;
+    font-weight: 600;
+}
+
+.map-legend div {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.map-legend img {
+    width: 20px;
+    height: 20px;
+    margin-bottom: 5px;
+}
+
+/* searching and sorting divs */
+.searchsort {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.searchsort div {
+    display: flex;
+    align-items: center;
+}
+
+/* searching */
+.search img, .search input {
+    height: 30px;
+}
+
+.search input {
+    border-radius: 5px;
+    border: 1px solid gray;
+    width: 300px;
+    padding-left: 10px;
+
+}
+
+.search input::placeholder {
+    color: gray;
+    font-family: "Montserrat", serif;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.search button {
+    width: 70px;
+    background-color: pink;
+    margin: 10px;
+    border: none;
+    border-radius: 10px;
+}
+
+/* sorting */
+.sort select{
+    margin-left: 10px;
+    padding-left: 10px;
+    font-family: "Montserrat", serif;
+    height: 30px;
+    color: gray;
+    border-radius: 5px;
+    width: 200px;
+}
+
+.sort option{
+    font-family: "Montserrat", serif;
+}
+
+/* places */
+.places{
+    margin: 100px;
+}
+
+.place{
+    background-color: rgb(227, 227, 227);
+    border-radius: 10px;
+    padding: 40px;
+    margin: 50px 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.section-1 {
+    grid-column: 1/2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.section-2 {
+    grid-column: 2/3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+.place img {
+    width: 300px;
+    object-fit: contain;
+}
+
+.tag {
+    border: 2px solid rgb(148, 25, 91);
+    color: rgb(148, 25, 91);
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+.place a {
+    text-decoration: none;
+    color: rgb(148, 25, 91);
+}
+
+.place a:hover {
+    color: pink;
+}
